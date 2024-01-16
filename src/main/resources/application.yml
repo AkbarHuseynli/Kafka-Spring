@@ -1,0 +1,59 @@
+#sample:
+#  rabbitmq:
+#    exchange: default
+#    queue: firstStepQueue
+#    routingKey: firstRoute
+#spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#server:
+#  servlet:
+#    session:
+#      timeout: 1m
+#      cookie:
+#        max-age: 1m
+
+spring:
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: ehberhuseynli@gmail.com
+#    password: zsidonanfodepael
+#    protocol: smtp
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#            required: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    defer-datasource-initialization: true
+    open-in-view: false
+  sql:
+    init:
+      mode: always
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          github:
+#            client-id: b9ef652c22a6c283d915
+#            client-secret: 23b8a739f83c7b84de015f9fb55035752ef1b950
+#          google:
+#            client-id: 289677598772-r8gdp5pg0f2j1ejitvuag7kv3v2va81g.apps.googleusercontent.com
+#            client-secret: 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
+
+jwt:
+  key: mYiADZOy9Hq5pTfomhj9hPUJLGAN/ZB6AZ4yoHfCtN0f8DaNQr6+4qeaJ9YfMK4ZbX85J3ao6TotW+jrLKLGeafpaYYLn2mmrYOB/1mJzhQYEaf883PtWAIwnTwHpPuEsJAhyHwEtlTvy++pZA+0bns66RUDBk80bJUA4JhJUI8
+
